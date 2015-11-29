@@ -1,0 +1,3 @@
+#!/bin/sh
+
+ARGS="$@" emacs -Q -batch -l Exploration1.el -f command-line #2> /dev/null

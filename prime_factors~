@@ -1,0 +1,43 @@
+;; This buffer is for notes you don't want to save, and for Lisp evaluation.
+;; If you want to create a file, visit that file with C-x C-f,
+;; then enter the text in that file's own buffer.
+(require 'cl)
+cl
+
+(defun is-prime(n)
+  (block 'is-prime-block
+  (loop for i from 2 to (- n 1)
+	do(if (= 0 (mod n i))
+	      (return-from 'is-prime-block nil)))
+  t))
+is-prime
+
+(setq i 2)
+2
+
+(defun prime-factors (inc num)
+  (print num)
+  (print inc)
+  (if (= 0 (% num inc))
+  (if(funcall 'is-prime inc) (print inc) (prime-factors 2 inc)
+  )(prime-factors (+ inc 1) num)))
+
+(prime-factors 2 360)
+
+360
+
+2
+
+2
+2
+
+
+
+
+
+
+
+
+
+
+
