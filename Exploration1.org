@@ -1,4 +1,8 @@
-
+* Description
+  Exploration one is designed to show the use of different predicates and
+  how they work. Specifically it shows how For all for all, for all for some,
+  for some for all and for some for some work. It also has some other predicates
+  such as is-prime.
 * Elisp
 #+BEGIN_SRC emacs-lisp :tangle yes
 (require 'cl); for loop macro
